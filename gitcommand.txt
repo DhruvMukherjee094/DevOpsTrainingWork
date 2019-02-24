@@ -1,0 +1,11 @@
+  7  git init                                                                                  creates a local repository in whichever directory this command is run
+    8  yum install git -y                                                                      install git on VM
+    9  git init                                                                                same as above
+   19  git status                                                                              shows git status 
+   20  git add linuxcommands.txt                                                               creates this file in the git local repository
+   21  git status
+   22  git commit -m"my first commit"                                                          name of the commit. can be anything
+   23  git status                                                                         
+   24  git remote add origin https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git       connect with remote from local repository
+   25  git push -u origin master                                                               pushes to the remote repository on GitHub
+
