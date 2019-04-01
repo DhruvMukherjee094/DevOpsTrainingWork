@@ -1,0 +1,129 @@
+ssh-keygen -t rsa
+    2  cat /root/.ssh/id_rsa.pub
+    3  ssh root@172.31.17.90
+    4  mkdir -P /opt/DevOpsTrainingWork
+    5  mkdir -p /opt/DevOpsTrainingWork
+    6  cd /opt/DevOpsTrainingWork
+    7  git init
+    8  yum install git -y
+    9  git init
+   10  history
+   11  cd /
+   12  history
+   13  cd /opt/DevOpsTrainingWork
+   14  history
+   15  history >> history.txt
+   16  cat history.txt
+   17  mv history.txt linuxcommands.txt
+   18  ls
+   19  git status
+   20  git add linuxcommands.txt
+   21  git status
+   22  git commit -m"my first commit"
+   23  git status
+   24  git remote add origin https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+   25  git push -u origin master
+   26  history
+   27  history | grep git
+   28  vi gitcommand.txt
+   29  git status
+   30  git commit -m"second commit 24thFeb"
+   31  git add -m"second commit 24thFeb"
+   32  git status
+   33  git add -m"second commit on 24thFeb"
+   34  git add gitcommand.txt
+   35  git status
+   36  git commit -m"second commit 24thFeb"
+   37  git status
+   38  git history
+   39  git log
+   40  git push origin master
+   41  sudo su -
+   42  who am i
+   43  yum install tree -y
+   44  tree
+   45  ls
+   46  which tree
+   47  rpm -qa | grep tree
+   48  ls
+   49  ls -l
+   50  ls -lrt
+   51  cd /opt/DevOpsTrainingWork
+   52  ls
+   53  cat /root/.ssh/id_rsa.pub
+   54  ssh root@172.31.13.152
+   55  ls
+   56  vi abcd.txt
+   57  git status
+   58  git add abcd.txt
+   59  git status
+   60  git push -u origin master
+   61  git status
+   62  git pull
+   63  git staus
+   64  git status
+   65  git push -u origin master
+   66  git commit -m "firsttrialself"
+   67  git push -u origin master
+   68  git status
+   69  exit
+   70  echo $myname
+   71  exit
+   72  man pwd
+   73  my name=dhruv
+   74  myname=dhruv
+   75  myname="dhruv"'
+   76  q
+   77  exirt
+   78  exit
+   79  :q
+   80  myname="dhruv"
+   81  echo $myname
+   82  bash
+   83  bash
+   84  echo $myname
+   85  cd ~
+   86  ls -la
+   87  vi .bashrc
+   88  vi .bash_profile
+   89  myname="dhruv"
+   90  echo $myname
+   91  bash
+   92  echo $myname
+   93  export myname="dhruv"
+   94  bash
+   95  logout
+   96  exit
+   97  bash
+   98  which bash
+   99  exit
+  100  ls -la
+  101  cd /opt
+  102  git clone https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+  103  ls -l
+  104  cd DevOpsTrainingWork/
+  105  git status
+  106  sudo su -
+  107  cd /opt/DevOpsTrainingWork/
+  108  mkdir -p ShellScripting
+  109  cd ShellScripting/
+  110  vi tardemo.sh
+  111  bash tardemo.sh
+  112  ls
+  113  cd /
+  114  cd /root
+  115  tar -czf Dhruv.tar *
+  116  ls
+  117  tar -tvf
+  118  tar  -tvf Dhruv.tar
+  119  history
+  120  tar -czf Dhruv.tar
+  121  tar -tzf Dhruv.tar
+  122  tar -tvf Dhruv.tar
+  123  echo $?
+  124  cd /opt/DevOpsTrainingWork/ShellScripting/
+  125  vi example3.sh
+  126  cd /opt/DevOpsTrainingWork/ShellScripting/
+  127  ls -la
+  128  bash example3.sh Ubuntu
+

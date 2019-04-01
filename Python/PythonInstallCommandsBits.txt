@@ -1,0 +1,47 @@
+    2  cd /home/ubuntu/
+    3  sudo git clone https://github.com/maheshkharwadkar/Django-Application.git
+    4  ls
+    5  cd Django-Application/
+    6  cp s3pythonapp /home/ubuntu/
+    7  cp -r s3pythonapp /home/ubuntu/
+    8  cd ..
+    9  ls -la
+   10  ls -lrt
+   11  cd s3pythonapp/
+   12  ls -ltr
+   13  cd s3pythonapp/
+   14  ls -lrt
+   15  vi settings.py
+   16  cd ..
+   17  ls -lrt
+   18  vi ../Django-Application/django.service
+   19  python manage.py runserver 0.0.0.0:80
+   20  cd /home/ubuntu/
+   21  ls -lrt
+   22  cd s3pythonapp/
+   23  python manage.py runserver 0.0.0.0:80
+   24  history >> python.txt
+   25  ls -la
+   26  cat python.txt
+   27  netstat -tulpn
+   28  kill -9 25252
+   29  python manage.py runserver 0.0.0.0:80
+   30  cd /home/ubuntu/s3pythonapp/
+   31  ls -lrt
+   32  cd s3pythonapp/
+   33  ls -lrt
+   34  cd /home/ubuntu/Django-Application/
+   35  ls -lrt
+   36  cat django.service
+   37  cd /etc/systemd/system/
+   38  cp  /home/ubuntu/Django-Application/django.service django.service
+   39  ls -lrt
+   40  sudo systemctl start django.service
+   41  sudo systemctl enable django.service
+   42  sudo systemctl start django.service
+   43  chk config enable django.service
+   44  chkconfig enable django.service
+   45  systemctl enable django.service
+   46  curl localhost/
+   47  vi /home/ubuntu/s3pythonapp/s3pythonapp/settings.py
+   48  netstat -tulpn
