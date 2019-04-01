@@ -1,0 +1,408 @@
+ 1  ssh-keygen -t rsa
+    2  cat /root/.ssh/id_rsa.pub
+    3  ssh root@172.31.17.90
+    4  mkdir -P /opt/DevOpsTrainingWork
+    5  mkdir -p /opt/DevOpsTrainingWork
+    6  cd /opt/DevOpsTrainingWork
+    7  git init
+    8  yum install git -y
+    9  git init
+   10  history
+   11  cd /
+   12  history
+   13  cd /opt/DevOpsTrainingWork
+   14  history
+   15  history >> history.txt
+   16  cat history.txt
+   17  mv history.txt linuxcommands.txt
+   18  ls
+   19  git status
+   20  git add linuxcommands.txt
+   21  git status
+   22  git commit -m"my first commit"
+   23  git status
+   24  git remote add origin https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+   25  git push -u origin master
+   26  history
+   27  history | grep git
+   28  vi gitcommand.txt
+   29  git status
+   30  git commit -m"second commit 24thFeb"
+   31  git add -m"second commit 24thFeb"
+   32  git status
+   33  git add -m"second commit on 24thFeb"
+   34  git add gitcommand.txt
+   35  git status
+   36  git commit -m"second commit 24thFeb"
+   37  git status
+   38  git history
+   39  git log
+   40  git push origin master
+   41  sudo su -
+   42  who am i
+   43  yum install tree -y
+   44  tree
+   45  ls
+   46  which tree
+   47  rpm -qa | grep tree
+   48  ls
+   49  ls -l
+   50  ls -lrt
+   51  cd /opt/DevOpsTrainingWork
+   52  ls
+   53  cat /root/.ssh/id_rsa.pub
+   54  ssh root@172.31.13.152
+   55  ls
+   56  vi abcd.txt
+   57  git status
+   58  git add abcd.txt
+   59  git status
+   60  git push -u origin master
+   61  git status
+   62  git pull
+   63  git staus
+   64  git status
+   65  git push -u origin master
+   66  git commit -m "firsttrialself"
+   67  git push -u origin master
+   68  git status
+   69  exit
+   70  echo $myname
+   71  exit
+   72  man pwd
+   73  my name=dhruv
+   74  myname=dhruv
+   75  myname="dhruv"'
+   76  q
+   77  exirt
+   78  exit
+   79  :q
+   80  myname="dhruv"
+   81  echo $myname
+   82  bash
+   83  bash
+   84  echo $myname
+   85  cd ~
+   86  ls -la
+   87  vi .bashrc
+   88  vi .bash_profile
+   89  myname="dhruv"
+   90  echo $myname
+   91  bash
+   92  echo $myname
+   93  export myname="dhruv"
+   94  bash
+   95  logout
+   96  exit
+   97  bash
+   98  which bash
+   99  exit
+  100  ls -la
+  101  cd /opt
+  102  git clone https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+  103  ls -l
+  104  cd DevOpsTrainingWork/
+  105  git status
+  106  sudo su -
+  107  cd /opt/DevOpsTrainingWork/
+  108  mkdir -p ShellScripting
+  109  cd ShellScripting/
+  110  vi tardemo.sh
+  111  bash tardemo.sh
+  112  ls
+  113  cd /
+  114  cd /root
+  115  tar -czf Dhruv.tar *
+  116  ls
+  117  tar -tvf
+  118  tar  -tvf Dhruv.tar
+  119  history
+  120  tar -czf Dhruv.tar
+  121  tar -tzf Dhruv.tar
+  122  tar -tvf Dhruv.tar
+  123  echo $?
+  124  cd /opt/DevOpsTrainingWork/ShellScripting/
+  125  vi example3.sh
+  126  cd /opt/DevOpsTrainingWork/ShellScripting/
+  127  ls -la
+  128  bash example3.sh Ubuntu
+  129  cd /home
+  130  mkdir -p Example
+  131  ls
+  132  cd Example/
+  133  git init
+  134  cd /home
+  135  ls -la
+  136  cd ec2-user/
+  137  ls -la
+  138  cd ..
+  139  cd Example/
+  140  ls -la
+  141  git rm -rf .git
+  142  git rm
+  143  git rm .git
+  144  rm -f .git
+  145  rm f .git
+  146  history
+  147  vi 3dayscommands
+  148  mv 3dayscommands /opt/DevOpsTrainingWork/ShellScripting/3dayscommands.txt
+  149  cd /opt/DevOpsTrainingWork/ShellScripting/
+  150  ls -la
+  151  vi tardemo.sh
+  152  cd ..
+  153  git init
+  154  git clone https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+  155  git status
+  156  ls -la
+  157  cd DevOpsTrainingWork/
+  158  ls -la
+  159  cd /home
+  160  ls -la
+  161  cd Example/
+  162  ls -la
+  163  rm -rf .git
+  164  ls -la
+  165  cd ..
+  166  rm Example
+  167  rm Example/
+  168  rmdir Example/
+  169  ls -la
+  170  cd /opt
+  171  ls la
+  172  ls -la
+  173  cd DevOpsTrainingWork/
+  174  ls -la
+  175  rmdir DevOpsTrainingWork
+  176  pwd
+  177  cd DevOpsTrainingWork/
+  178  ls -la
+  179  cd ..
+  180  rm -r DevOpsTrainingWork
+  181  ls -la
+  182  rmdir -r DevOpsTrainingWork
+  183  rmdir DevOpsTrainingWork
+  184  rmdir --help
+  185  rmdir -p DevOpsTrainingWork
+  186  cd DevOpsTrainingWork/
+  187  rm abcd.txt linuxcommands.txt gitcommand.txt
+  188  ls -la
+  189  rm -rf .git
+  190  ls -la
+  191  rm -rf .
+  192  cd ..
+  193  ls -la
+  194  pwd
+  195  cd she
+  196  cd ShellScripting/
+  197  ls -la
+  198  cp 3dayscommands.txt /opt/DevOpsTrainingWork/3dayscommands
+  199  cd ..
+  200  ls -la
+  201  git status
+  202  git add 3dayscommands ShellScripting
+  203  git status
+  204  git commit -m "New commit on 2nd March"
+  205  git push -u origin master
+  206  cd ~
+  207  vi echoname.sh
+  208  vi redirection.sh
+  209  bash redirection.sh
+  210  cat outfile.txt
+  211  cat re
+  212  cat redirection.sh
+  213  cat outfile.txt
+  214  vi bashifelse.sh
+  215  bash bashifelse.sh 3
+  216  bash bashifelse.sh 1
+  217  vi bashdirectorycheck.sh
+  218  bash bashdirectorycheck.sh /opt/DevOpsTrainingWork/ShellScripting
+  219  bash bashdirectorycheck.sh /opt/DevOps
+  220  vi bash-case.sh
+  221  bash bash-case.sh
+  222  vi bash-case.sh
+  223  bash bash-case.sh
+  224  vi bash-case.sh
+  225  vi bashforloop.sh
+  226  bash bashforloop.sh
+  227  vi bashforloop_1.sh
+  228  bash bashforloop_1.sh
+  229  vi c-style-loop.sh
+  230  bash c-style-loop.sh
+  231  vi bash-while-loop.sh
+  232  bash bash-while-loop.sh
+  233  vi bash-while-loop.sh
+  234  bash bash-while-loop.sh
+  235  vi bash-while-loop.sh
+  236  bash bash-while-loop.sh
+  237  vi bash-while-loop.sh
+  238  vi complexbashexample.sh
+  239  bash complexbashexample.sh
+  240  vi complexbashexample.sh
+  241  bash complexbashexample.sh
+  242  vi complexbashexample.sh
+  243  bash complexbashexample.sh
+  244  vi complexbashexample.sh
+  245  bash complexbashexample.sh
+  246  vi complexbashexample.sh
+  247  bash complexbashexample.sh
+  248  vi complexbashexample.sh
+  249  bash complexbashexample.sh
+  250  vi example.csv
+  251  rm example.csv
+  252  vi csvoperations.csv
+  253  head csvoperations.csv
+  254  head -n 25 csvfile.csv
+  255  head -n 25 csvoperations.csv
+  256  yum install python3-csvkit
+  257  grep -i "college" csvoperations.csv | csvlook
+  258  vi readuserinput.sh
+  259  bash readuserinput.sh
+  260  cd /opt
+  261  ls -la
+  262  cd DevOpsTrainingWork/
+  263  ls -la
+  264  cd ..
+  265  history
+  266  locate csvoperations.csv
+  267  find / -name csvoperations.csv
+  268  ls la
+  269  ls -la
+  270  find / -name *.csv
+  271  cd /opt/DevOpsTrainingWork/
+  272  ls -la
+  273  cd ShellScripting/
+  274  ls -la
+  275  cd /
+  276  cd /root
+  277  ls -la
+  278  cat /etc/ssh/sshd_config
+  279  vi /etc/ssh/sshd_config
+  280  vi /etc/ssh/sshd_config
+  281  service sshd restart
+  282  passwd
+  283  vi /etc/ssh/sshd_config
+  284  cd /tmp
+  285  ls -la
+  286  cd /opt
+  287  cd DevOpsTrainingWork/ShellScripting/
+  288  ls -la
+  289  cat example3.sh
+  290  chmod +x example3.sh
+  291  ./example3.sh
+  292  cd /home
+  293  ls
+  294  cd ec2-user/
+  295  ls
+  296  cd /opt/DevOpsTrainingWork/
+  297  ls
+  298  file / -name *.csv
+  299  find | -name *.csv
+  300  cd DevOpsTrainingWork/
+  301  ls
+  302  ls -la
+  303  locate -i *.csv
+  304  locate -i gitcommand.txt
+  305  find . -name *.csv
+  306  find . -name "*.csv"
+  307  cd /opt
+  308  ls
+  309  cd DevOpsTrainingWork/
+  310  l
+  311  ls
+  312  ls -la
+  313  cd ShellScripting/
+  314  ls -la
+  315  cd /etc
+  316  ls -la
+  317  file yum.conf
+  318  cd /opt/DevOpsTrainingWork/ShellScripting/
+  319  vi mycsvfile.csv
+  320  clear
+  321  head mycsvfile.csv
+  322  head -n 30 mycsvfile.csv
+  323  clear
+  324  apt install python3-csvkit
+  325  yum install python3-csvkit
+  326  head mycsvfile.csv | csvlook
+  327  csvlook --help
+  328  grep -i "college" mycsvfile.csv | csvlook
+  329  cat mycsvfile.csv | cut -f4,6 -d, > udata.csv
+  330  ls -la
+  331  sudo pip install bashplotlib
+  332  cat udata.csv| tail -n +2 | scatter
+  333  vi complexscript.sh
+  334  chmod +x complexscript.sh
+  335  ./complexscript.sh
+  336  vi complexscript.sh
+  337  clear
+  338  ./complexscript.sh
+  339  vi complexscript.sh
+  340  ./complexscript.sh
+  341  ./complexscript.sh [-nsv] [-f FILE]
+  342  vi balchal1.sh
+  343  chmod +x balchal1.sh
+  344  ./balchal1.sh
+  345  rm balchal1.sh
+  346  echo 172.31.13.220 AWS_Redhat_Demo_4 | sudo tee -a /etc/hosts
+  347  ssh root@AWS_Redhat_Demo_4 uptime
+  348  ssh root@172.31.13.220 uptime
+  349  cd /root/.ssh
+  350  ls -la
+  351  cat known_hosts
+  352  cd /etc
+  353  ls -la
+  354  clear
+  355  ssh root@AWS_Redhat_Demo_4 uptime
+  356  cd /root/.ssh
+  357  vi /opt/servers
+  358  cd /opt
+  359  for SERVER in $(cat /opt/servers); do  ssh ${SERVER} hostname;  ssh ${SERVER} uptime; done
+  360  ssh root@AWS_Redhat_Demo_4 uptime;hostname
+  361  ping -a 172.31.13.220
+  362  ping -c 1 172.31.13.220
+  363  cd DevOpsTrainingWork/ShellScripting/
+  364  vi Pingscript.sh
+  365  chmod +x Pingscript.sh
+  366  ./Pingscript.sh
+  367  vi Pingscript.sh
+  368  ./Pingscript.sh
+  369  ls -la
+  370  vi complexscript.sh
+  371  ./complexscript.sh
+  372  vi complexscript.sh
+  373  ./complexscript.sh
+  374  vi complexscript.sh
+  375  ./complexscript.sh -n hostname
+  376  ./complexscript.sh -v uptime
+  377  ./complexscript.sh -ns id
+  378  vi complexscript.sh
+  379  history
+  380  cat /opt/servers
+  381*
+  382  vi complexscript.sh
+  383  ./complexscript.sh -ns uptime
+  384  ./complexscript.sh -sv id
+  385  vi Apacheinstall.sh
+  386  chmod +x Apacheinstall.sh
+  387  ./Apacheinstall.sh
+  388  ./Apacheinstall.sh 172.31.13.220
+  389  ./Apacheinstall.sh AWS_Redhat_Demo_4
+  390  curl http://172.31.13.220
+  391  curl --request GET -v http://172.31.13.220
+  392  curl -o http://172.31.13.220
+  393  curl -O http://172.31.13.220
+  394  curl -o /dev/null -s -w "%{http_code}\n" http://localhost
+  395  curl -o /dev/null -s -w "%{http_code}\n" http://172.31.13.220
+  396  history
+  397  vi processes.sh
+  398  sh processes.sh
+  399  sh processes.sh httpd
+  400  vi processes.sh
+  401  ssh root@AWS_Redhat_Demo_4 $(pidof httpd)
+  402  ssh root@AWS_Redhat_Demo_4 $(httpd)
+  403  vi processes.sh
+  404  chmod +x processes.sh
+  405  ./processes.sh httpd
+  406  vi processes.sh
+  407  ./processes.sh httpd AWS_Redhat_Demo_4
+  408  history
