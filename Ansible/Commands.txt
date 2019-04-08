@@ -1,0 +1,35 @@
+    2  vi installhttp.yml
+    3  ansible-playbook installhttp.yml -vv
+    4  vi installhttp.yml
+    5  ansible-playbook installhttp.yml -vv
+    6  vi installhttp.yml
+    7  ansible-playbook installhttp.yml -vv
+    8  vi installhttp.yml
+    9  ansible-playbook installhttp.yml
+   10  vi installhttp.yml
+   11  ansible-playbook installhttp.yml
+   12  ssh-keygen -t rsa
+   13  ansible-playbook installhttp.yml
+   14  vi installhttp.yml
+   15  vi passwordless_demo.yml
+   16  ansible-playbook passwordless_demo.yml
+   17  vi passwordless_demo.yml
+   18  ansible-playbook passwordless_demo.yml
+   19  vi passwordless_demo.yml\
+   20  vi passwordless_demo.yml
+   21  ansible-playbook passwordless_demo.yml
+   22  vi passwordless_demo.yml
+   23  ansible-playbook passwordless_demo.yml
+   24  vi passwordless_demo.yml
+   25  ls
+   26  ansible-playbook passwordless_demo.yml
+   27  rm -rf passwordless_demo.retry
+   28  ansible-playbook passwordless_demo.yml
+   29  cd /root/.ssh/
+   30  ls
+   31  ssh-keygen -t rsa
+   32  cd /opt/ansible-demo/
+   33  ls
+   34  rm -rf passwordless_demo.retry
+   35  ansible-playbook passwordless_demo.yml
+   36  ssh root@172.31.1.173
