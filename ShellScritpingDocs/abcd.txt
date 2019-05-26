@@ -1,0 +1,130 @@
+t
+    2  cd root
+    3  cd /
+    4  cd ..
+    5  exit
+    6  cd /root
+    7  pwd
+    8  .SSh
+    9  cd /root/,ssh
+   10  cd /root/.ssh
+   11  ls -lrt
+   12  ls -l
+   13  ls
+   14  cd authorized_keys
+   15  ssh keygen -t rsa
+   16  vi authorized_keys
+   17  cat authorized_keys
+   18  clear
+   19  pwd
+   20  vi authorized_keys
+   21  ssh-keygen -t rsa
+   22  pwd
+   23  ls
+   24  rm help
+   25  help rm
+   26  info rm
+   27  rm M1RSA_Keys M1RSA_Keys.pub
+   28  pwd
+   29  ls
+   30  clear
+   31  ssh-keygen -t rsa
+   32  ls -lrt
+   33  cat id_rsa.pub
+   34  cat authorized_keys
+   35  clear
+   36  cat id_rsa
+   37  cat id_rsa.pub
+   38  ssh root@
+   39  ssh root@13.127.211.170
+   40  clear
+   41  pwd
+   42  ssh root@13.127.211.170
+   43  cd ..
+ 44  cat /root/.ssh/authorized_keys
+   45  ssh root@13.127.211.170
+   46  cat /root/.ssh/id_rsa.pub
+   47  ssh root@13.127.211.170
+   48  cd /root
+   49  ls -l
+   50  ls -lrt
+   51   cd /opt
+   52  ls
+   53  ls -l
+   54  cd ..
+   55  cd /root/opt/Devopstrainingmaterial
+   56  mkdir /root/opt/Devopstrainingmaterial
+   57  mkdir -p /root/opt/Devopstrainingmaterial
+   58  cd /opt
+   59  ls
+   60  ls -l
+   61  mkdir -P /root/opt/Devopstrainingmaterial
+   62  mkdir --help
+   63  clear
+   64  ls
+   65  mkdir devopsmaterial
+   66  ls
+   67  git init
+   68  yum install git -y
+   69  yum remove git -y
+   70  yum install git -y
+   71  pwd
+   72  git init
+   73  mkdir -p /root/opt/newone && cd /root/opt/newone
+   74  ls
+   75  cd ..
+   76  ls
+   77  rm newone
+   78  rm -r newone
+   79  ls
+   80  cd ..
+   81   cd ..
+   82  mkdir -p /root/opt/newone && cd /root/opt/newone
+   83  cd ..
+   84  ls
+   85  rm -r newone -y
+   86  rm -r newone
+ 85  rm -r newone -y
+   86  rm -r newone
+   87  ls
+   88  cd Devopstrainingmaterial/
+   89  ls
+   90  cd /.git
+   91  ls -lrt
+   92  history >> history.txt
+   93  ls
+   94  logs >> log.txt
+   95  log >> log.txt
+   96  clear
+   97  ls
+   98  mv history.txt log.txt
+   99  ls
+  100  cat log.txt
+  101  vi log.txt
+  102  rm log.txt
+  103  ls
+  104  git status
+  105  git add history.txt
+  106  git init
+  107  git status
+  108  git add history.txt
+  109  git status
+  110  git commit -m "firsttrybyself"
+  111  git statsu
+  112  git status
+  113  git remote add origin https://github.com/DhruvMukherjee094/DevOpsTrainingWork.git
+  114  git push -u origin master
+  115  git pull
+  116  git status
+  117  ls
+  118  ls -l
+  119  git add history.txt
+  120  git status
+  121  cd ..
+  122  rm -r Devopstrainingmaterial
+  123  y
+  124  ls
+  125  mkdir devops
+  126  ls
+  127  cd devops/
+

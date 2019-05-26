@@ -1,0 +1,162 @@
+------------------Python Django Application------------------------------
+s3sampleapplicationec2
+
+#!/bin/bash
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install -y python-pip python-dev build-essential
+pip install --upgrade pip
+sudo pip install django==1.11 requests boto3 django-bootstrap3 pillow 
+django-admin.py startproject s3pythonapp
+
+https://stackoverflow.com/questions/42196124/there-are-errors-when-i-install-django-by-git
+
+
+sudo git clone https://github.com/maheshkharwadkar/Django-Application.git
+colibris3applicationsample
+
+1. Created ubuntu machine
+   Crete Role to get s3fullaccess from ec2
+   create bucket
+   create ELB
+   
+2. Type bash script in userdata
+3. cd /etc/systemd/system
+4. vi django.service -- Copy the code in it.
+   sudo systemctl start django.service
+   sudo systemctl enable django.service
+
+
+
+
+---------------------
+ELB: SampleEc2S3LoadBalancer
+Security Group: s3app
+Targer Group: EC2S3Group
+Timeout: 10 sec
+
+
+
+1.Create S3 Bucket
+  colibris3applicationsample (to be changed)
+2.Crete Iam role
+   Role Name: s3sampleapplicationec2
+           s3sampleapplicationec2
+           
+3. Create Ubuntu 16.04 machine with userdata.sh script
+   sudo apt-get update -y
+   sudo apt-get upgrade -y
+   sudo apt-get install -y python-pip python-dev build-essential
+   
+   
+    sudo pip install django==1.11 requests boto3 django-bootstrap3 pillow
+    django-admin.py startproject s3pythonapp
+    
+    git clone https://github.com/maheshkharwadkar/Django-Application.git    
+4. Add security group with Port 22,80
+
+5. Do SSH
+   scp -i "key path" source floder ubuntu@ip:/home/ubuntu/s3pythonapp
+   Copy s3pythonapp to /home/ubuntu/s3pythonapp
+
+    Changes in settings.py
+      1. change S3 Bucket Name
+	    line no.- 91 : Change S3 bucket name
+      3. Change ELB DNS Name
+		line no.- 45 : Change ELB DNS Name
+	      
+      2. ALLOWED_HOSTS = ["*"]
+		line no.- 30 : ALLOWED_HOSTS = ["*"]
+			
+  
+ 
+  
+    cd /etc/systemd/system/
+    sudo vi django.service
+    sudo systemctl start django.service
+    sudo systemctl enable django.service
+           
+6. Create AMI - s3ApplicationAMI
+
+
+7. Create Autoscaling Group
+     LC - s3ec2sampleapp
+          Role Name s3sampleapplicationec2
+     Select Security group- s3app
+     AG Name: s3ec2group
+     Give all the subnets in the region
+     Receive Traffic from one or more Load Balancer
+     Target Group- Ec2S3Group
+     Configure Auto Scaling Policies
+       Increase Group Size
+         CPU utilization >= 60% (uncheck send notification)  [use apt install stress, stress -c 80 for increasing load example]
+
+       Decrease Group Size
+         <=30%
+
+---------------------Git hub Link
+https://github.com/maheshkharwadkar/Django-Application
+
+  
+ sudo dpkg --configure -a
+ 
+cd /home/ubuntu/Django-Application
+sudo cp django.service /etc/systemd/system/
+
+cd /home/ubuntu/
+git clone https://github.com/maheshkharwadkar/Django-Application.git
+sudo vi django.service
+
+sudo dpkg --configure -a
+
+------------------------------------------------------------
+
+manage.py is the main service is the main file for djnago service
+forms.py and the views.py is for viewing purpose 
+
+
+cd /etc/systemd/system/
+sudo vi django.service
+    
+#!bin/sh
+
+[Unit]
+Description=Sample S3 Django Application
+After=network.target
+
+[Service]
+PIDFILE=/var/run/cric.pid
+ExecStart=/usr/bin/python /home/ubuntu/s3pythonapp/manage.py runserver 0.0.0.0:80
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl start django.service
+sudo systemctl enable django.service
+
+
+s3ApplicationAMI
+
+s3ec2sampleapp
+
+s3ec2group
+
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectingMindTerm
+ 
+ 
+apt install stress
+stress -c 80
+
+
+https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
+
+
+[default]
+aws_access_key_id = 
+aws_secret_access_key = 
+
+ 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html

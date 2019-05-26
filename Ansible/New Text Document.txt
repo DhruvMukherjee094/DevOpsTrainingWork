@@ -1,0 +1,20 @@
+Ansible Installation
+1. Create a new file called 'ansible.repo' in 
+cd /etc/yum.repos.d
+vi ansible.repo
+
+2. Copy the following content into it:
+[Ansible]
+name = ansible
+baseurl = https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
+enabled = 1
+gpgcheck = 0 
+3. Run 'yum update' 
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install ansible
+ansible --version
+
+3. Add Private IP of client machine in /etc/ansible/hosts
+
+4. 172.31.14.56 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=~/.ssh/ansibleclient.pem 
+   (ansibleclient.pem is the pem file for client machine)
